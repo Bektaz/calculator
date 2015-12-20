@@ -1,0 +1,357 @@
+.bimg{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(http://s21.postimg.org/64ipudt1f/bimg.png);
+}
+.main{
+  position: relative;
+  width:100%;
+  height:500px;  
+}
+/*div for backside*/
+.whole{
+  position: absolute;
+  width: 390px;
+  height: 330px;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;    
+  background-color: #0D234A;
+  border-radius: 7% 7% 0 0;
+  border-top-style: inset;
+  border-top-width: 5px;
+  border-top-color: #36363B;  
+  border-left-style: inset;
+  border-left-width: 5px;
+  border-left-color: #27262F;
+  border-right-style: inset;
+  border-right-width: 5px;
+  border-right-color: #36363B;
+  z-index: 1;   
+}
+.screen{
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 290px;
+  height: 50px;
+  background-color: #777F6A;
+  box-shadow:inset 0px 0px 0px 2px black;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #EAE9E5;
+}
+/*div and inside wire, ribbon, lines, holes*/
+#wiresdiv{
+  position: relative;
+  opacity: 0.85;
+  z-index: 1;
+}
+#ribbon{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  top: 10%;
+}
+#blackwire{
+  position: absolute;
+  top: 16%;
+  left: 5%;
+  z-index: -1;
+  width: 120px;
+  height: 50px;
+}
+#colorfulwires{
+  position: absolute;
+  left: 70%;
+  width: 65px;
+}
+.line1{
+  position: absolute;
+  width: 360px;
+  height: 330px;
+  top: 8%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  box-shadow: 0 0 13px black;
+  z-index: -1;   
+}
+.line2{
+  position: absolute;
+  width: 348px;
+  height: 330px;
+  top: 9%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  box-shadow: 0 0 3px black;
+  z-index: -1;   
+}
+.holeouter1{
+  width:15px;
+  height: 15px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;  
+  border-radius: 100%; 
+  box-shadow: 0 0 13px black;
+}
+.holeinner1{
+  width:10px;
+  height: 10px;
+  background-color: black;
+  align-self: center;
+  border-radius: 100%;
+}
+.holeouter2{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width:15px;
+  height: 15px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;  
+  border-radius: 100%;
+  box-shadow: 0 0 13px black;
+}
+.holeinner2{
+  width:10px;
+  height: 10px;
+  background-color: black;
+  align-self: center;
+  border-radius: 100%;
+}
+/*calculator div with broken edges*/
+.calc{
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;  
+  background-color: #5C739C;
+  border-radius: 0 0 7% 7%;
+  box-shadow: inset -4px -4px 15px  #27262F,inset 4px -4px 15px  #27262F ;
+  -webkit-clip-path: polygon(26% 5%, 44% 0, 71% 4%, 79% 0, 100% 4%, 100% 100%, 0 100%, 0 0, 17% 5%, 24% 0);
+  -o-clip-path: polygon(26% 5%, 44% 0, 71% 4%, 79% 0, 100% 4%, 100% 100%, 0 100%, 0 0, 17% 5%, 24% 0);
+  -moz-clip-path: polygon(26% 5%, 44% 0, 71% 4%, 79% 0, 100% 4%, 100% 100%, 0 100%, 0 0, 17% 5%, 24% 0);
+  -ms-clip-path: polygon(26% 5%, 44% 0, 71% 4%, 79% 0, 100% 4%, 100% 100%, 0 100%, 0 0, 17% 5%, 24% 0);
+  z-index: 2;
+}
+/*another div for giving shadow to broken edges*/
+.calcshadow{
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 0;
+  right: 0;  
+  margin-left: auto; 
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto; 
+  margin-bottom: auto;
+  background-color: black;
+  border-radius: 0 0 7% 7%;
+  box-shadow: inset -4px -4px 15px  #27262F,inset 4px -4px 15px  #27262F ;
+  -webkit-clip-path: polygon(27% 5%, 44% 0, 76% 4%, 79% 0, 100% 3.3%, 100% 100%, 0 100%, 0 0, 20% 5%, 24% 0);
+  -o-clip-path: polygon(27% 5%, 44% 0, 76% 4%, 79% 0, 100% 3.3%, 100% 100%, 0 100%, 0 0, 20% 5%, 24% 0);
+  -moz-clip-path: polygon(27% 5%, 44% 0, 76% 4%, 79% 0, 100% 3.3%, 100% 100%, 0 100%, 0 0, 20% 5%, 24% 0);
+  -ms-clip-path: polygon(27% 5%, 44% 0, 76% 4%, 79% 0, 100% 3.3%, 100% 100%, 0 100%, 0 0, 20% 5%, 24% 0);
+  z-index: 1;
+}
+/*fcc and js words*/
+.wordsdiv{
+  position: absolute;
+  width: 338px;
+  height: 40px;
+  top: 1%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;    
+  z-index: 1;
+}
+/*calc numbers area*/
+.oval{
+  position: absolute;
+  width: 310px;
+  height: 205px;
+  left: 0;
+  right: 0;
+  margin-left: auto; 
+  margin-right: auto;
+  top: 13%;
+  background-color: #797A7A;
+  border-radius: 3%;
+  border-top: 7px inset #9DA0A1;
+  border-left: 7px inset #9DA0A1;
+  border-bottom: 7px inset #C5C8C9;
+  border-right: 7px inset #C5C8C9;
+  z-index: 0;
+}
+/*pos relative to give proper place to glass effect divs*/
+.row{
+  position: relative;
+}
+.spec .blue{  
+  top: 3.5%;  
+}
+/*fonts*/
+p{
+  text-align:center; 
+  font-weight: bold;
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 30px;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+font{
+  font-size: 18px;
+  color: #DCDCDC;
+  font-weight: bold;
+  font-family: 'Droid Serif', serif;
+}
+#fcc{
+  float: left;
+}
+#js{
+  float: right;
+}
+/*blue buttons*/
+.btns{
+  width: 45px;
+  height: 45px;
+  margin: 1px;
+  display: inline-block;
+  border-radius: 15%;
+  border:none;
+  outline:none;
+  box-shadow: 0px 0px 3px;
+}
+.bluebtns{
+  background: linear-gradient(#020B5E, #91D9F4);
+  background: -webkit-linear-gradient(#020B5E, #91D9F4); 
+  background: -moz-linear-gradient(#020B5E, #91D9F4); 
+  background: -ms-linear-gradient(#020B5E, #91D9F4); 
+  background: -o-linear-gradient(#020B5E, #91D9F4); 
+}
+.blue{
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 2.5%;  
+  border-radius: 15%;  
+  background: linear-gradient(#C5C9E6, #7699D2);
+  background: -webkit-linear-gradient(#C5C9E6, #7699D2);
+  background: -moz-linear-gradient(#C5C9E6, #7699D2);
+  background: -ms-linear-gradient(#C5C9E6, #7699D2);
+  background: -o-linear-gradient(#C5C9E6, #7699D2);
+  margin-left: -3px;
+  opacity: 0.55;
+}
+
+/*white buttons*/
+.whitebtns{
+    color: rgba(255, 255, 255, 0.6);
+    width: 45px;
+    height: 45px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;  
+    outline: none;
+}
+.white{
+    background: linear-gradient(
+      170deg,
+      rgba(255,255,255,0.8) 0%,
+      rgba(255,255,255,0.6) 20%,
+      rgba(255,255,255,0.1) 50%,
+      rgba(0,0,0,0.0) 50%,
+      rgba(0,0,0,0.0) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.4);
+    border-image: none;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/*button margins from calc inner edges*/
+.leftside{
+  margin-left: 4px;
+}
+.topside{
+  margin-top: 4px;
+}
+.row{
+  margin-top: 3px;
+}
+
+/*float last two rows to place equal button properly*/
+#idoflastrowlements{
+  float: left;
+  margin-right: 4px;
+}
+
+/*special buttons*/
+#equalbtndiv{
+  height: 94px;
+  border-radius: 10%;
+}
+#equalbtndiv .blue{
+  height: 40px;
+}
+#multiplypar{  
+  padding-left: 8px;
+}
+#deldiv{  
+  width: 94px;
+  border-radius: 10%;
+}
+#deldiv .blue{
+  width: 88px;
+}
+#delpar{
+  padding-left: 25px;
+}
+
+/*btn activ effects*/
+.bluebtns:active{
+  background: #5481B4;
+  border: inset 2px black;
+}
+.whitebtns:active{
+  background: #797A7A;  
+  border: inset 2px black;
+}
+#screenpar{
+  float: right;
+  font-size: 35px;
+  margin-top: 4px;
+  width: 200px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+  
+  

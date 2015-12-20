@@ -1,0 +1,79 @@
+<!DOCTYPE>
+
+<html>	
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="calculatorcss.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>	
+		<div class='bimg'></div>
+		<div class='main'>
+		  <div class='whole'>
+			<div class='screen' id='screen'>
+			  <p id='screenpar'></p>
+			</div>
+			<div id='wiresdiv'> 
+			<img id='ribbon' src='http://s13.postimg.org/fdjr3o43n/ribbon1.jpg'>
+			<img id='blackwire' src='http://s29.postimg.org/omwwhgekj/bunchofwires.png'>
+			<img id='colorfulwires' src='http://s15.postimg.org/ctq9u2amv/colorfulwires.png'>
+			</div>
+				<!--http://s13.postimg.org/fdjr3o43n/ribbon1.jpg-->
+			<div class='line1'></div>
+			<div class='line2'>
+			  <div class='holeouter1'><div class='holeinner1'></div></div>
+			  <div class='holeouter2'><div class='holeinner2'></div></div>
+		  </div>  
+		  </div>  
+		  <div class='calc'>
+			<div class='wordsdiv'>
+			  <font id = 'fcc'>FreeCodeCamp</font>
+			  <font id = 'js'>JS Calculator</font>
+			</div>
+			<div class='oval'>
+			  <div class='firstrow'>
+				<button class='btns leftside topside  bluebtns' onclick='clr()'><p>c</p><div class='blue'></div></button> 
+				<button class='btns topside bluebtns' id='deldiv' onclick='del()'><p id='delpar'>del</p><div class='blue'></div></button>
+				<button class='btns topside bluebtns' onclick='calsqrt()'><p>sqrt</p><div class='blue'></div></button>
+				<button class='btns topside bluebtns' onclick='togleplusminus()'><p>+/-</p><div class='blue'></div></button>
+				<button class='btns topside bluebtns' onclick='toggleSound()'><p>s</p><div class='blue'></div></button>
+			  </div>
+			  <div class='secondrow row spec'>
+				<button class='btns leftside whitebtns white' onclick='clicknums(7)'><p>7</p></button> 
+				<button class='btns whitebtns white' onclick='clicknums(8)'><p>8</p></button>
+				<button class='btns whitebtns white'onclick='clicknums(9)'><p>9</p></button>
+				<button class='btns bluebtns' onclick='calpercent()'><p>%</p><div class='blue'></div></button>
+				<button class='btns bluebtns operators' onclick='operators("/")'><p>/</p><div class='blue'></div></button>
+				<button class='btns bluebtns operators' onclick='operators("*")'><p id='multiplypar'>*<p><div class='blue'></div></button>
+			  </div>
+			  <div class='lastrow row'>
+				<div class='lastrowelements' id='idoflastrowlements'>
+				  <div>
+					<button class='btns leftside whitebtns white' onclick='clicknums(4)'><p>4</p></button> 
+					<button class='btns whitebtns white' onclick='clicknums(5)'><p>5</p></button>
+					<button class='btns whitebtns white' onclick='clicknums(6)'><p>6</p></button>
+					<button class='btns bluebtns operators' onclick='operators("-")'><p>-</p><div class='blue'></button>
+					<button class='btns bluebtns operators' onclick='operators("+")'><p>+</p><div class='blue'></button>
+				  </div>
+				  <div class='row'>
+					<button class='btns leftside whitebtns white' onclick='clicknums(1)'><p>1</p></button> 
+					<button class='btns whitebtns white' onclick='clicknums(2)'><p>2</p></button>
+					<button class='btns whitebtns white' onclick='clicknums(3)'><p>3</p></button>
+					<button class='btns bluebtns' onclick='adddot()' id='iddot'><p>.</p><div class='blue'></button>
+					<button class='btns whitebtns white' onclick='clicknums(0 )'><p>0</p></button>
+				  </div>
+				</div>
+				<div class='lastrowelements' id='idofdivofequalbutton'>
+				  <div>
+					<button class='btns bluebtns' id='equalbtndiv' onclick='calculate(this)'><p>=</p><div class='blue'></button>
+				  </div>  
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class='calcshadow'></div>
+          <audio preload id='audid'><source id='srcid' src='sound/beep.wav' type="audio/wav"/></audio>
+		</div>
+		<script src="calculatorjs.js"></script>
+	</body> 
+</html>	
