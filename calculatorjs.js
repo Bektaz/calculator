@@ -1,12 +1,3 @@
-$(document).ready(function(){
-  $('.bluebtns')
-    .mouseup(function(){
-      $(this).find('.blue').css('opacity','0.55');
-    })
-    .mousedown(function(){
-    $(this).find('.blue').css('opacity','0');
-  });
-});
 //default screen
 document.getElementById('screenpar').innerHTML = '0';
 //define global variables
@@ -260,3 +251,14 @@ function playSound(){
 }
 //togle sound
 function toggleSound(){ isSoundon ? isSoundon = false : isSoundon = true;}
+
+/*some jQuery*/
+$(document).ready(function(){
+  $('.bluebtns')
+    .mouseup(function(){
+      $(this).find('.blue').css('opacity','0.55');
+    })
+    .mousedown(function(){
+    $(this).find('.blue').css('opacity','0');
+  });
+});
